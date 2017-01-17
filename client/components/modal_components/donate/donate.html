@@ -1,0 +1,33 @@
+<header class='modalHeader'>
+  <h1>Make a Donation</h1>
+  <button class='closeModalButton pull-right btn btn-danger' ng-click='vm.closeModal()'>X</button>
+</header>
+
+<section class='modalFormSection'>
+  <form name='form' ng-submit='vm.donate()' novalidate>
+    <label for='amount'>Amount
+      <input class='form-control' type='number' name='amount' placeholder='$ Amount' ng-model='vm.donateForm.amount' required/>
+    </label>
+    <label for='firstname'>First Name On Card
+      <input class='form-control' type='text' name='firstname' placeholder='First Name' ng-model='vm.donateForm.firstName' required/>
+    </label>
+    <label for='lastname'>Last Name On Card
+      <input class='form-control' type='text' name='lastname' placeholder='Last Name' ng-model='vm.donateForm.lastName' required/>
+    </label>
+    <label for='cardnumber'>Card Number
+      <input class='form-control' type='number' name='cardnumber' placeholder='Card Number' ng-model='vm.donateForm.cardNumber' required/>
+    </label>
+    <label for='securitycode'>Card Security Code <br/> (3 or 4 digit number on back of card)
+      <input class='form-control' type='number' maxlength='4' name='securitycode' placeholder='Card Security Code' ng-model='vm.donateForm.cardSecurityCode' required/>
+    </label>
+    <div>
+      <label for='exp_month'>Card Expiration Month
+        <input class='form-control' type='number' ng-model='vm.donateForm.exp_month' name='exp_month' placeholder='MM' required/>
+      </label>
+      <label for='exp_year'>Card Expiration Year
+        <input class='form-control' type='number' ng-model='vm.donateForm.exp_year' name='exp_year' placeholder='YYYY' required/>
+      </label>
+    </div>
+    <button class='btn btn-success' ng-disabled='form.$invalid' type='submit'>Submit Donation</button>
+  </form>
+</section>

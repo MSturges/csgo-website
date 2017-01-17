@@ -1,0 +1,22 @@
+{
+  "name": "csgo-website",
+  "description": "",
+  "main": "./bin/www",
+  "authors": [
+    "MSturges <Sturges3232@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/MSturges/csgo-website",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}

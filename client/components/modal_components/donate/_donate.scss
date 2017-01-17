@@ -1,0 +1,45 @@
+@import '../../../sass/utils/variables';
+
+.modalHeader {
+  border-bottom: 1px solid lightgrey;
+  padding: 10px;
+  h1 {
+    display: inline;
+  }
+
+}
+
+.modalFormSection {
+  text-align: center;
+
+  label, input, button, select {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  input {
+    width: 80%;
+  }
+
+}
+
+
+.sectionContainer {
+  text-align: center;
+
+  button {
+    margin-bottom: 10px;
+    overflow: hidden;
+
+    &:hover {
+      color: black;
+    }
+  }
+  form {
+    label, input {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
+}

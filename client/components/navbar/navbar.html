@@ -1,0 +1,22 @@
+<nav class='navbar navbar-default' role='navigation'>
+  <div class='navbar-header'>
+    <button type='button' class='navbar-toggle' ng-init='isNavCollapsed=true' ng-click='isNavCollapsed = !isNavCollapsed'>
+      <span class='sr-only'>Toggle navigation</span>
+      <span class='icon-bar'></span>
+      <span class='icon-bar'></span>
+      <span class='icon-bar'></span>
+    </button>
+    <!-- navbar logo -->
+    <!-- <div ui-sref='layout.main'><img id='navbar-img' src='/images/image.png'/></div> -->
+  </div>
+  <div class='collapse navbar-collapse' uib-collapse='isNavCollapsed'>
+    <ul class='nav navbar-nav'>
+      <li>
+        <a ui-sref-active='activeAnchor' ui-sref='layout.main' blur>Main</a>
+      </li>
+      <li>
+        <a ng-click='vm.openDonateModal()' blur>Donate</a>
+      </li>
+    </ul>
+  </div>
+</nav>
