@@ -1,1 +1,19 @@
 @import '../../sass/utils/variables';
+
+#main-container {
+  padding-top: 60px;
+  .container {
+
+    .left-col{
+      border: 1px solid black;
+    }
+    .middle-col{
+      border: 1px solid black;
+
+    }
+    .right-col {
+      border: 1px solid black;
+
+    }
+  }
+}
